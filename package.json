@@ -14,7 +14,8 @@
     "check:eslint": "eslint src/*",
     "check:prettier": "prettier --check .",
     "fix:prettier": "prettier --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "deploy-to-hugo": "npm run build && rm -rf ../hardv3r.hu/static/chat && cp -r dist ../hardv3r.hu/static/chat"
   },
   "keywords": [],
   "author": "Ajay Bura",
